@@ -1,0 +1,6 @@
+javac Streams/Files/two.java
+javac Streams/Files/one.java
+
+
+java Streams.Files.one
+javac C:\Users\Max.000\IdeaProjects\Oracle\enum\src\Streams\Files\two.java
