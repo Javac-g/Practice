@@ -8,5 +8,5 @@ public class TwoD {
         this.x = x;
         this.y = y;
     }
-    
+
 }
