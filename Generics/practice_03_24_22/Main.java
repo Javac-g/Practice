@@ -7,5 +7,10 @@ public class Main {
         one.showInfo();
         System.out.println("Value: " + one.getOb());
 
+        Two<Integer,String> two = new Two<Integer, String>(4536,"Hello Markes");
+        two.showType("Int: ","String: ");
+
+        System.out.println("Int: " + two.getOb1());
+        System.out.println("String: " + two.getOb2());
     }
 }

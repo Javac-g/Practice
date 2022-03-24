@@ -18,9 +18,11 @@ public class Two<T,V> {
         return ob2;
     }
 
-    void showType(){
-        System.out.println("T: " + ob1.getClass().getName());
-        System.out.println("V: " + ob2.getClass().getName());
+    void showType(String one,String two){
+
+        System.out.println(one + ob1.getClass().getName());
+        System.out.println(two + ob2.getClass().getName());
+
     }
 
 

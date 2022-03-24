@@ -14,7 +14,7 @@ public class One<T> {
         return ob;
     }
 
-    void showInfo(){
+    void showInfo( ){
 
         System.out.println("Type: " + ob.getClass().getName());
 
