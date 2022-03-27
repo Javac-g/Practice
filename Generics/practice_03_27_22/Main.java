@@ -8,5 +8,8 @@ public class Main {
         One<String> two = new One<>("Hello");
         System.out.println(two.getOb().getClass().getName());
 
+        Two<String,Integer> TWO = new Two<>("The answer is: ",42);
+        System.out.println(TWO.getT()+TWO.getV());
+
     }
 }
