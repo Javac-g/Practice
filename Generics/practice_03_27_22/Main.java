@@ -5,7 +5,8 @@ public class Main {
 
         One<Integer> one = new One<>(99876);
         System.out.println(one.getOb().getClass().getName());
+        One<String> two = new One<>("Hello");
+        System.out.println(two.getOb().getClass().getName());
 
-        
     }
 }
