@@ -11,5 +11,8 @@ public class Main {
         Two<String,Integer> TWO = new Two<>("The answer is: ",42);
         System.out.println(TWO.getT()+TWO.getV());
 
+        THR<Double> thr = new THR<>(22.3);
+        System.out.println("Double: " + thr.getOb());
+
     }
 }
