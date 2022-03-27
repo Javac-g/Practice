@@ -10,9 +10,13 @@ public class Main {
 
         Two<String,Integer> TWO = new Two<>("The answer is: ",42);
         System.out.println(TWO.getT()+TWO.getV());
+        Double[] arr1 = {222.3,421.4,92.11};
+        Integer[] arr2 = {1,2,3,4,5,6,3,2};
+        THR<Double> thd = new THR<>(arr1);
+        THR<Integer> thi = new THR<>(arr2);
+        thd.diff(thi);
 
-        THR<Double> thr = new THR<>(22.3);
-        System.out.println("Double: " + thr.getOb());
+
 
     }
 }

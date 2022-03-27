@@ -1,16 +1,16 @@
 package Generics.practice_03_27_22;
 
 public class THR<T extends Number> {
-    T ob;
-    THR(T ob){
-        this.ob = ob;
+
+    T[] arr_one;
+    THR(T[] arr_one){
+
+        this.arr_one  = arr_one;
     }
 
-    public T getOb() {
-        return ob;
-    }
 
-    public void setOb(T ob) {
-        this.ob = ob;
+
+    public void diff(THR<?> arr_two){
+
     }
 }
