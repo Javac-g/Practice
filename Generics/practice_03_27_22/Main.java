@@ -12,9 +12,7 @@ public class Main {
         System.out.println(TWO.getT()+TWO.getV());
         Double[] arr1 = {222.3,421.4,92.11};
         Integer[] arr2 = {1,2,3,4,5,6,3,2};
-        THR<Double> thd = new THR<>(arr1,arr2);
-        THR<Integer> thi = new THR<>(arr2);
-        thd.diff(thi);
+
 
 
 
