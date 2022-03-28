@@ -2,12 +2,12 @@ package Generics.practice_03_27_22;
 
 public class coordinate <T extends TWOd > {
 
-    T [] coord;
+    T [] ArrayWithCoord;
 
 
-    coordinate(T []  coord){
+    coordinate(T []  ArrayWithCoord){
 
-        this.coord = coord;
+        this.ArrayWithCoord = ArrayWithCoord;
 
     }
 
