@@ -6,6 +6,7 @@ public class threeD extends twoD {
     threeD(int x, int y,int z){
 
         super(x,y);
+        this.z = z;
 
     }
 
