@@ -4,7 +4,8 @@ public class Run {
 
     public static void main(String...args){
 
-
+        FirstType one = new FirstType("First");
+        one.start();
 
     }
 
