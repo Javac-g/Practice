@@ -10,6 +10,7 @@ public class One<T> {
     }
 
     public T getObject() {
+
         return object;
     }
 
