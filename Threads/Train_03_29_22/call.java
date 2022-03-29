@@ -1,7 +1,7 @@
 package Threads.Train_03_29_22;
 
 public class call {
-    public  void calling(String msg){
+    synchronized   void calling(String msg){
         try {
             System.out.print("[" + msg);
             Thread.sleep(500);
