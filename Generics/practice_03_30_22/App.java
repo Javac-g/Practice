@@ -18,10 +18,11 @@ public class App {
         for (int i = 0; i <object.coordinates.length; i++ ){
             System.out.print(object.coordinates[i].x + " ");
 
-            System.out.println(object.coordinates[i].y + " ");
+            System.out.print(object.coordinates[i].y + " ");
 
-            System.out.println(object.coordinates[i].z + " ");
+            System.out.print(object.coordinates[i].z + " ");
         }
+        System.out.println("X Y Z coordinates");
     }
 
     static void show_XYZT(Map<? extends XYZT> object){
@@ -29,12 +30,14 @@ public class App {
 
             System.out.print(object.coordinates[i].x + " ");
 
-            System.out.println(object.coordinates[i].y + " ");
+            System.out.print(object.coordinates[i].y + " ");
 
-            System.out.println(object.coordinates[i].z + " ");
+            System.out.print(object.coordinates[i].z + " ");
 
-            System.out.println(object.coordinates[i].t + " ");
+            System.out.print(object.coordinates[i].t + " ");
         }
+
+        System.out.println("X Y Z T coordinates");
     }
 
     public static void main(String...args){
