@@ -7,7 +7,7 @@ public class Stack<T> {
 
      Stack(int stackSize){
          last = -1;
-         this.stackSize = stackSize;
+
          this.stck = (T[]) new Object[stackSize];
 
 
