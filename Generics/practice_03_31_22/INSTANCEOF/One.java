@@ -1,9 +1,9 @@
-package Generics.practice_03_31_22;
+package Generics.practice_03_31_22.INSTANCEOF;
 
-public class Instance<T> {
+public class One<T> {
     T ob;
 
-    Instance(T ob){
+    One(T ob){
         this.ob = ob;
     }
 
