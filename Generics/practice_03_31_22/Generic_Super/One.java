@@ -2,17 +2,17 @@ package Generics.practice_03_31_22.Generic_Super;
 
 public class One<T> {
 
-    T ob;
+    T ob1;
 
-    One(T ob){
+    One(T ob1){
 
-        this.ob = ob;
+        this.ob1 = ob1;
 
     }
 
     T getOb(){
 
-        return ob;
+        return ob1;
 
     }
 

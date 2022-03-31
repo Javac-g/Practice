@@ -10,4 +10,10 @@ public class Two<T,V> extends One<T> {
         this.ob2 = ob2;
 
     }
+
+    V getOb2(){
+
+        return ob2;
+
+    }
 }
