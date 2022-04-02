@@ -1,6 +1,6 @@
 package Lambdas;
 
-public interface AB {
+public interface Tool_One {
 
     double getValue();
 
