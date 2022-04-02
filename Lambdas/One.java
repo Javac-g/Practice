@@ -5,6 +5,13 @@ public class One {
         Tool_One toolOne;
         Tool_Two tool_two;
         Tool_Three tool_three;
+        Tool_Four tool_four = (n) ->{
+            int result = 1;
+            for( int  i = 1; i <= n ;i++){
+                result = result * i;
+            }
+            return result;
+        };
         toolOne = () -> 123.45;
         System.out.println(toolOne.getValue());
         toolOne = () -> Math.random() * 100;
@@ -13,5 +20,7 @@ public class One {
         System.out.println(tool_two.test(5));
         tool_three  = (n,v) -> (n%v) == 0;
         System.out.println(tool_three.test(294,5));
+        System.out.println(tool_four.func(5));
+
     }
 }
