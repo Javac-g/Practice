@@ -5,6 +5,13 @@ public class One {
         Tool_One toolOne;
         Tool_Two tool_two;
         Tool_Three tool_three;
+        Tool_Six tool_six = (name) -> "Hello " + name;
+        Tool_Six tool_six1 = (name) -> {
+            String hello = name + " dev";
+            return hello;
+        };
+        System.out.println(tool_six1.myname("Maks"));
+        System.out.println(tool_six.myname("Maks"));
         Tool_Four tool_four = (n) ->{
             int result = 1;
             for( int  i = 1; i <= n ;i++){
