@@ -12,6 +12,15 @@ public class One {
             }
             return result;
         };
+
+        Tool_Five tool_five =(w) ->{
+            String result = "";
+            for(int i = w.length() - 1; i >= 0; i --){
+                result += w.charAt(i);
+            }
+            return  result;
+        };
+
         toolOne = () -> 123.45;
         System.out.println(toolOne.getValue());
         toolOne = () -> Math.random() * 100;
@@ -21,6 +30,6 @@ public class One {
         tool_three  = (n,v) -> (n%v) == 0;
         System.out.println(tool_three.test(294,5));
         System.out.println(tool_four.func(5));
-
+        System.out.println("Revers = " + tool_five.revers("Revers"));
     }
 }
