@@ -8,7 +8,7 @@ public class One {
         System.out.println(toolOne.getValue());
         toolOne = () -> Math.random() * 100;
         System.out.println(toolOne.getValue());
-        tool_two = (n) -> n * n > 5;
+        tool_two = n -> n * n > 5;
         System.out.println(tool_two.test(5));
     }
 }
