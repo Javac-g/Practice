@@ -2,16 +2,17 @@ package Lambdas;
 
 public class One {
     public static void main(String...args){
-        Tool_One toolOne;
-        Tool_Two tool_two;
-        Tool_Three tool_three;
-        Tool_Six tool_six = (name) -> "Hello " + name;
-        Tool_Six tool_six1 = (name) -> {
-            String hello = name + " dev";
-            return hello;
-        };
-        System.out.println(tool_six1.myname("Maks"));
-        System.out.println(tool_six.myname("Maks"));
+        //links
+
+        Tool_One one;
+        Tool_Two two;
+        Tool_Three three;
+
+
+
+        //blocks
+
+
         Tool_Four tool_four = (n) ->{
             int result = 1;
             for( int  i = 1; i <= n ;i++){
@@ -28,15 +29,22 @@ public class One {
             return  result;
         };
 
-        toolOne = () -> 123.45;
-        System.out.println(toolOne.getValue());
-        toolOne = () -> Math.random() * 100;
-        System.out.println(toolOne.getValue());
-        tool_two = n -> n * n > 5;
-        System.out.println(tool_two.test(5));
-        tool_three  = (n,v) -> (n%v) == 0;
-        System.out.println(tool_three.test(294,5));
+
+
+
+
+        one = () -> Math.random() * 100;
+        two = n -> n * n > 5;
+        three  = (n,v) -> (n%v) == 0;
+        Tool_Six<Integer> six = (value) ->  value;
+        Tool_Six<String> six1 = (value) -> value ;
+
+        System.out.println(one.getValue());
+        System.out.println(two.test(5));
+        System.out.println(three.test(294,5));
         System.out.println(tool_four.func(5));
         System.out.println("Revers = " + tool_five.revers("Revers"));
+        System.out.println("Value: " + six1.myname("String"));
+        System.out.println("Value: " + six.myname(23542));
     }
 }

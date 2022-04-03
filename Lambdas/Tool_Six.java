@@ -1,7 +1,7 @@
 package Lambdas;
 
-public interface Tool_Six {
+public interface Tool_Six<T> {
 
-    String myname(String name);
+    T myname(T value);
 
 }
