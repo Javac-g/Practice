@@ -1,6 +1,6 @@
 package Lambdas.practice_04_03_22.Var2;
 
-import Lambdas.practice_04_03_22.Func;
+
 
 public class Main {
 
