@@ -14,4 +14,7 @@ public class Metod {
     static Integer Mynumber(Integer num){
         return (num * 888) / 123;
     }
+    Integer Numd(Integer d){
+        return (d * 123) / 143;
+    }
 }

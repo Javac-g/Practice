@@ -13,6 +13,8 @@ public class Main {
     public static void main(String...args){
 
         Stool<String> one = msg->msg.toLowerCase();
+        Metod metod = new Metod();
+        System.out.println(run(metod::Numd,123));
         System.out.println(run(Metod::Mynumber,124));
         System.out.println(run(Metod::revers,"124"));
         System.out.println(one.function("asdfggfds"));
