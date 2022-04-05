@@ -1,6 +1,6 @@
 package Lambdas.General_Practice_05_04_22.One;
 
-public class XYZ extends XY{
+ class XYZ extends XY{
     int z;
 
     XYZ(int x, int y, int z){
