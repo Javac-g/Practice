@@ -1,7 +1,7 @@
 package Lambdas.practice_04_07_22;
 
-public interface Tool<T> {
+public interface Tool {
 
-    T function(T t);
+   Box function(int t);
 
 }

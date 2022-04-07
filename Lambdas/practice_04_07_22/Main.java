@@ -1,7 +1,7 @@
 package Lambdas.practice_04_07_22;
 
 public class Main {
-    static <T>  T runner (Tool<T> tool, T t){
+    static <T>  T runner (ALLtool<T> tool, T t){
         return tool.function(t);
     }
 
@@ -17,8 +17,9 @@ public class Main {
         Meth meth = new Meth();
         Integer[] nums = {1,2,3,4,3,2,1,2,32,3,43,2,};
         String[] str = {"one","two","three","four","two","two","two"};
-        Tool<Integer> ToolOne = num->num /100;
-        Tool<String> ToolTwo = msg->   msg;
+
+        ALLtool<Integer> ToolOne = num->num /100;
+        ALLtool<String> ToolTwo = msg->   msg;
 
         System.out.println(ToolOne.function(999));
         System.out.println(ToolTwo.function("zero"));
