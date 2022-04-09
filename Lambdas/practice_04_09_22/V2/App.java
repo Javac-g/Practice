@@ -13,6 +13,11 @@ public class App {
         return "" + setup.function(t);
     }
 
+    static <V> String create (Best<V> best, V[] vals,V v ){
+
+        return best.function(vals,v);
+    }
+
     public static void main(String...args){
         //#1
         Toolz one  = msg->msg.toUpperCase();
@@ -41,6 +46,16 @@ public class App {
         System.out.println(Runner(Nsetup,10000));
         System.out.println(Runner(Ssetup,"Hello Markes"));
 
+        Metod object = new Metod();
+        System.out.println(Runner(Metod::One,"LINK"));
+        System.out.println(Runner(object::Two,"Next ONE"));
+
+        Integer[] arr = {1,1,2,3,4,1,2,1,2,1,4,5,6};
+        String[] sarr = {"one","two","three","four","two","two","two"};
+
+
+        System.out.println(create(Metod::Three,arr,1));
+        System.out.println(create(Metod::Three,sarr,"two"));
 
 
 
