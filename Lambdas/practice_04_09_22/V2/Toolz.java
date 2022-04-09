@@ -4,4 +4,5 @@ public interface Toolz {
 
     String function(String msg);
 
+
 }
