@@ -9,4 +9,5 @@ public class XYZ extends XY {
         this.z = z;
 
     }
+
 }
