@@ -8,11 +8,17 @@ public class App {
 
     }
 
+    static <T> String Runner(Setup<T> setup, T t){
+
+        return "" + setup.function(t);
+    }
+
     public static void main(String...args){
         //#1
         Toolz one  = msg->msg.toUpperCase();
-
+        Math math = num -> num + 400;
         System.out.println(one.function("FirsT"));
+        System.out.println(math.function(12415));
         //#2
         Toolz two = msg -> {
             String s = "";
@@ -31,6 +37,10 @@ public class App {
 
         System.out.println(Nsetup.function(123));
         System.out.println(Ssetup.function("Hello my name is Maks"));
+
+        System.out.println(Runner(Nsetup,10000));
+        System.out.println(Runner(Ssetup,"Hello Markes"));
+
 
 
 
