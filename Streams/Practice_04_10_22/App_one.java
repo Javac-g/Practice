@@ -1,8 +1,6 @@
 package Streams.Practice_04_10_22;
 
-import java.io.FileInputStream;
-
-import java.io.IOException;
+import java.io.*;
 
 public class App_one {
     public static void main(String...args) throws IOException {
@@ -11,17 +9,18 @@ public class App_one {
 
 
         try(FileInputStream fileInputStream = new FileInputStream(args[0])){
-                int i;
-
+                int i = 0;
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            PrintWriter pr = new PrintWriter(System.out,true);
                 if(args.length != 1){
 
                         System.out.println("File not found");
 
-                    }
+                }
                 do{
                     i = fileInputStream.read();
                     if(i != -1){
-                        System.out.println((char)i);
+                        System.out.print( (char)i + " ");
                     }
                 }while (i != -1);
         } catch (IOException e) {
