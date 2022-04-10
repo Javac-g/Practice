@@ -8,8 +8,8 @@ import java.io.IOException;
 public class App_one {
     public static void main(String...args) throws IOException {
 
-        FileInputStream fileInputStream = new FileInputStream(args[0]);
-        FileOutputStream fileOutputStream = new FileOutputStream("Streams/Practice_04_10_22/Test.txt");
+        FileInputStream fileInputStream = null;
+        FileOutputStream fileOutputStream = null;
 
         if(args.length != 1){
 
@@ -27,8 +27,20 @@ public class App_one {
         } catch (IOException e) {
             e.printStackTrace();
         }finally {
-            fileInputStream.close();
-            fileOutputStream.close();
+            try {
+                if(fileInputStream != null){
+                    fileInputStream.close();
+                }
+            }catch (IOException e1){
+                System.out.println("E1");
+            }
+            try {
+                if (fileOutputStream != null) {
+                    fileOutputStream.close();
+                }
+            }catch (IOException e2){
+                System.out.println("E2");
+            }
         }
 
     }
