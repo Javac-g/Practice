@@ -1,8 +1,7 @@
 package Streams.Practice_04_10_22;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
+
 import java.io.IOException;
 
 public class App_one {
@@ -11,8 +10,7 @@ public class App_one {
 
 
 
-        try(FileInputStream fileInputStream = new FileInputStream(args[0]);
-            FileOutputStream fileOutputStream = new FileOutputStream("Streams/Practice_04_10_22/Test.txt")){
+        try(FileInputStream fileInputStream = new FileInputStream(args[0])){
                 int i;
 
                 if(args.length != 1){
@@ -23,7 +21,7 @@ public class App_one {
                 do{
                     i = fileInputStream.read();
                     if(i != -1){
-                        fileOutputStream.write(i);
+                        System.out.println((char)i);
                     }
                 }while (i != -1);
         } catch (IOException e) {
