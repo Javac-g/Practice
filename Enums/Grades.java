@@ -4,6 +4,5 @@ public enum Grades {
     PERFECT,
     GOOD,
     NORMAL,
-    WEAK,
-    BAD
+    
 }
