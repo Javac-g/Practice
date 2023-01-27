@@ -6,7 +6,7 @@ public class One {
 
     static public boolean check(String sentence){
 
-        boolean answer = false;
+        boolean answer = true;
         String one = "";
         String lower = sentence;
         for(int i = 0; i < lower.length()-1; i++){
